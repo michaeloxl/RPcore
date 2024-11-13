@@ -4,9 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.OOC</groupId>
+    <groupId>org.Rpcore</groupId>
     <artifactId>rpcore</artifactId>
-    <version>1.0</version>
+    <version>0.0.4</version>
     <packaging>jar</packaging>
 
     <name>Rpcore</name>

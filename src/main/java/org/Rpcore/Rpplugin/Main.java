@@ -31,7 +31,7 @@ public final class Main extends JavaPlugin implements CommandExecutor, Listener 
         }
 
         YamlConfiguration modifyfile = YamlConfiguration.loadConfiguration(file);
-        getLogger().info(ChatColor.GREEN + "characters.yml has been loaded");
+        getLogger().info("characters.yml has been loaded");
 
         OOC oocInstance = new OOC();
         LOOC loocInstance = new LOOC(this);
@@ -46,7 +46,9 @@ public final class Main extends JavaPlugin implements CommandExecutor, Listener 
         Bukkit.getPluginCommand("setdesc").setExecutor(new setdesc(this));
         Bukkit.getPluginManager().registerEvents(new clickviewdesc(this), this);
         Bukkit.getPluginCommand("setage").setExecutor(new setage(this));
-        getLogger().info(ChatColor.GREEN + "plugin has been enabled");
+        Bukkit.getPluginCommand("viewdesc").setExecutor(new viewdesc(this));
+
+        getLogger().info("plugin has been enabled");
 
 
 

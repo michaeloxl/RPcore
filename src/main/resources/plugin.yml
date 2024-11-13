@@ -1,6 +1,6 @@
 name: RpCore
-version: '1.0'
-main: org.OOC.oOC.Main
+version: '0.0.4'
+main: org.Rpcore.Rpplugin.Main
 api-version: '1.21'
 commands:
   looc:
@@ -8,3 +8,4 @@ commands:
   rpname:
   setdesc:
   setage:
+  viewdesc:
