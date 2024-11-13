@@ -10,6 +10,8 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+import org.bukkit.event.player.PlayerQuitEvent;
+
 import java.util.List;
 import java.util.ArrayList;
 import java.util.UUID;
@@ -52,4 +54,14 @@ public class OOC implements CommandExecutor, Listener {
         }
         return true;
     }
+    @EventHandler
+    public void OnPlayerLeave(PlayerQuitEvent event2) {
+        //To remove the player from the list when they leave
+        Player player2 = event2.getPlayer();
+        Enabled.remove(player2.getUniqueId());
+        logger.info("Player " + player2.getName() + " removed from Enabled list because they left the server.");
+    }
+
+
+
 }
