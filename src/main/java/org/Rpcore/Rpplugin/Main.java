@@ -1,6 +1,5 @@
 // Main.java
 package org.Rpcore.Rpplugin;
-
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandExecutor;
@@ -47,7 +46,7 @@ public final class Main extends JavaPlugin implements CommandExecutor, Listener 
         Bukkit.getPluginManager().registerEvents(new clickviewdesc(this), this);
         Bukkit.getPluginCommand("setage").setExecutor(new setage(this));
         Bukkit.getPluginCommand("viewdesc").setExecutor(new viewdesc(this));
-
+        Bukkit.getPluginCommand("setrole").setExecutor(new setrole(this));
         getLogger().info("plugin has been enabled");
 
 

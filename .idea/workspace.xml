@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ae6798f0-850e-4208-a856-f1690475b252" name="Changes" comment="n/a">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Rpcore/Rpplugin/setrole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Rpcore/Rpplugin/Chatformat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Rpcore/Rpplugin/Chatformat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Rpcore/Rpplugin/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Rpcore/Rpplugin/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Rpcore/Rpplugin/viewdesc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Rpcore/Rpplugin/viewdesc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;michaeloxl&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/michaeloxl/RPcore.git&quot;,
+    &quot;accountId&quot;: &quot;c7a20c7a-82d7-4a7e-b642-efbd081b4c56&quot;
+  }
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2oH6Db7sqzWzNCche8mmmVKtCLX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven.ooc [clean,package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.ooc [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.ooc [test].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.rpcore [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.rpcore [test].executor&quot;: &quot;Run&quot;,
+    &quot;Notification.DisplayName-DoNotAsk-WindowsDefender&quot;: &quot;Microsoft Defender configuration&quot;,
+    &quot;Notification.DoNotAsk-WindowsDefender&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Michael/IdeaProjects/OOC&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.Rpcore.Rpplugin" />
+      <recent name="org.OOC.oOC" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23726.103" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23726.103" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ae6798f0-850e-4208-a856-f1690475b252" name="Changes" comment="" />
+      <created>1730514035974</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1730514035974</updated>
+      <workItem from="1730514039206" duration="1428000" />
+      <workItem from="1730560743231" duration="3831000" />
+      <workItem from="1730601445322" duration="2636000" />
+      <workItem from="1730636047104" duration="5055000" />
+      <workItem from="1730730102271" duration="8301000" />
+      <workItem from="1730742061407" duration="10300000" />
+      <workItem from="1730753251915" duration="192000" />
+      <workItem from="1730754259594" duration="48000" />
+      <workItem from="1731159474858" duration="1842000" />
+      <workItem from="1731343312807" duration="22000" />
+      <workItem from="1731346167706" duration="1117000" />
+      <workItem from="1731360451805" duration="1068000" />
+      <workItem from="1731509633638" duration="1012000" />
+      <workItem from="1731527729024" duration="245000" />
+      <workItem from="1731527978830" duration="3586000" />
+      <workItem from="1731546250239" duration="1864000" />
+      <workItem from="1731863913597" duration="46000" />
+      <workItem from="1731870426902" duration="4232000" />
+      <workItem from="1731985255039" duration="1868000" />
+      <workItem from="1731987916600" duration="128000" />
+      <workItem from="1732023070990" duration="1190000" />
+    </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1731346862959</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1731346862959</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Changed group id">
+      <option name="closed" value="true" />
+      <created>1731528123489</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1731528123489</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Changed group id">
+      <option name="closed" value="true" />
+      <created>1731528170385</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1731528170385</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added A /viewdesc command">
+      <option name="closed" value="true" />
+      <created>1731533068705</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1731533068705</updated>
+    </task>
+    <task id="LOCAL-00005" summary="n/a">
+      <option name="closed" value="true" />
+      <created>1731546621272</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1731546621272</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <MESSAGE value="Changed group id" />
+    <MESSAGE value="Added A /viewdesc command" />
+    <MESSAGE value="n/a" />
+    <option name="LAST_COMMIT_MESSAGE" value="n/a" />
+  </component>
+</project>
