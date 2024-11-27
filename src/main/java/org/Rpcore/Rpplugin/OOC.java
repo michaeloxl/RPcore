@@ -21,6 +21,9 @@ public class OOC implements CommandExecutor, Listener {
     private final List<UUID> Enabled = new ArrayList<>();
     private final Logger logger = Bukkit.getLogger();
 
+    public OOC(Main main) {
+    }
+
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent event) {
         Player player = event.getPlayer();

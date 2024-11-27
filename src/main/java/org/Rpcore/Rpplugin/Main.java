@@ -1,7 +1,6 @@
 // Main.java
 package org.Rpcore.Rpplugin;
 import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.event.Listener;
@@ -28,28 +27,25 @@ public final class Main extends JavaPlugin implements CommandExecutor, Listener 
                 return;
             }
         }
-
+    // Load the characters.yml file
         YamlConfiguration modifyfile = YamlConfiguration.loadConfiguration(file);
         getLogger().info("characters.yml has been loaded");
-
-        OOC oocInstance = new OOC();
-        LOOC loocInstance = new LOOC(this);
         getConfig().options().copyDefaults();
         saveDefaultConfig();
-        Bukkit.getPluginCommand("ooc").setExecutor(oocInstance);
-        Bukkit.getPluginCommand("looc").setExecutor(loocInstance);
-        Bukkit.getPluginManager().registerEvents(oocInstance, this);
-        Bukkit.getPluginManager().registerEvents(new Chatformat(this), this);
-        Bukkit.getPluginCommand("rpname").setExecutor(new RPName(this));
-        Bukkit.getPluginManager().registerEvents(new displayname(this),this);
-        Bukkit.getPluginCommand("setdesc").setExecutor(new setdesc(this));
-        Bukkit.getPluginManager().registerEvents(new clickviewdesc(this), this);
-        Bukkit.getPluginCommand("setage").setExecutor(new setage(this));
-        Bukkit.getPluginCommand("viewdesc").setExecutor(new viewdesc(this));
-        Bukkit.getPluginCommand("setrole").setExecutor(new setrole(this));
-        getLogger().info("plugin has been enabled");
-
-
+        Commands();
+        //Give the server time to load the commands and events
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
+        Events();
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
+        getLogger().info("Rpcore has been enabled");
 
 
     }
@@ -61,4 +57,25 @@ public final class Main extends JavaPlugin implements CommandExecutor, Listener 
     public File getFile() {
         return this.file;
     }
+public void Commands(){
+        // Register commands
+        Bukkit.getPluginCommand("ooc").setExecutor(new OOC(this));
+    Bukkit.getPluginCommand("looc").setExecutor(new LOOC(this));
+    Bukkit.getPluginCommand("rpname").setExecutor(new RPName(this));
+    Bukkit.getPluginCommand("setdesc").setExecutor(new setdesc(this));
+    Bukkit.getPluginCommand("setage").setExecutor(new setage(this));
+    Bukkit.getPluginCommand("viewdesc").setExecutor(new viewdesc(this));
+    Bukkit.getPluginCommand("setrole").setExecutor(new setrole(this));
+    getLogger().info("Commands have been loaded");
+}
+public void Events(){
+    // Register events
+        Bukkit.getPluginManager().registerEvents(new OOC(this), this);
+    Bukkit.getPluginManager().registerEvents(new Chatformat(this), this);
+    Bukkit.getPluginManager().registerEvents(new displayname(this),this);
+    Bukkit.getPluginManager().registerEvents(new clickviewdesc(this), this);
+    getLogger().info("Events have been loaded");
+
+}
+
 }

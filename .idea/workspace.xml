@@ -4,14 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae6798f0-850e-4208-a856-f1690475b252" name="Changes" comment="n/a">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Rpcore/Rpplugin/setrole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="ae6798f0-850e-4208-a856-f1690475b252" name="Changes" comment="Added Configurable roles">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/Rpcore/Rpplugin/Chatformat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Rpcore/Rpplugin/Chatformat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/Rpcore/Rpplugin/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Rpcore/Rpplugin/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Rpcore/Rpplugin/viewdesc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Rpcore/Rpplugin/viewdesc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Rpcore/Rpplugin/OOC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Rpcore/Rpplugin/OOC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Rpcore/Rpplugin/setrole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Rpcore/Rpplugin/setrole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/original-rpcore-0.0.6.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/original-rpcore-0.0.6.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/rpcore-0.0.6-shaded.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/rpcore-0.0.6-shaded.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/rpcore-0.0.6.jar" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +134,11 @@
       <workItem from="1731870426902" duration="4232000" />
       <workItem from="1731985255039" duration="1868000" />
       <workItem from="1731987916600" duration="128000" />
-      <workItem from="1732023070990" duration="1190000" />
+      <workItem from="1732023070990" duration="1307000" />
+      <workItem from="1732330044049" duration="2712000" />
+      <workItem from="1732369671766" duration="1207000" />
+      <workItem from="1732674243692" duration="13000" />
+      <workItem from="1732674567476" duration="4632000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -175,7 +180,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731546621272</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added Configurable roles">
+      <option name="closed" value="true" />
+      <created>1732024310108</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1732024310108</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,6 +222,7 @@
     <MESSAGE value="Changed group id" />
     <MESSAGE value="Added A /viewdesc command" />
     <MESSAGE value="n/a" />
-    <option name="LAST_COMMIT_MESSAGE" value="n/a" />
+    <MESSAGE value="Added Configurable roles" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Configurable roles" />
   </component>
 </project>

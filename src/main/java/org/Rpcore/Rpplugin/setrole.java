@@ -5,7 +5,6 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
-import org.bukkit.event.Listener;
 
 
 public class setrole implements CommandExecutor{
@@ -13,7 +12,6 @@ public class setrole implements CommandExecutor{
 
     public setrole(Main main) {
         this.main = main;
-        YamlConfiguration modifyfile = YamlConfiguration.loadConfiguration(main.getFile());
     }
 
 
