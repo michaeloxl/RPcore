@@ -16,7 +16,7 @@ public class setdesc implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender Sender, Command command, String s, String[] args) {
-        YamlConfiguration modifyfile = YamlConfiguration.loadConfiguration(main.getFile());
+        YamlConfiguration modifyfile = YamlConfiguration.loadConfiguration(main.getCharactersFile());
 
         if (args.length == 0) {
             Sender.sendMessage("You must provide a description.");
@@ -25,7 +25,7 @@ public class setdesc implements CommandExecutor {
             String desc = String.join(" ", args);
             modifyfile.set(player.getUniqueId() + ".desc", desc);
             try {
-                modifyfile.save(main.getFile());
+                modifyfile.save(main.getCharactersFile());
             } catch (Exception e) {
                 main.getLogger().warning("Could not save player desc to characters.yml file");
             }

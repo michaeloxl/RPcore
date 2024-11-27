@@ -16,12 +16,14 @@ public class displayname implements Listener {
     public void Onjoin(PlayerJoinEvent event) {
 
         Player player = event.getPlayer();
-        YamlConfiguration modifyfile = YamlConfiguration.loadConfiguration(main.getFile());
+        YamlConfiguration modifyfile = YamlConfiguration.loadConfiguration(main.getCharactersFile());
+        YamlConfiguration modify2file = YamlConfiguration.loadConfiguration(main.getRoles());
         String rpname = modifyfile.getString(player.getUniqueId() + ".rpname");
-
+        String role = modifyfile.getString(player.getUniqueId() + ".role");
+        String actualrole = modify2file.getString(role);
         if (rpname != null) {
             player.setDisplayName(rpname);
-            player.setPlayerListName(rpname);
+            player.setPlayerListName(actualrole + " " + rpname);
         } else {
             player.setDisplayName(player.getName());
         }

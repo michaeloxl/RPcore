@@ -20,12 +20,12 @@ public class RPName implements CommandExecutor {
             if (args.length >= 1 && args.length <= 5) {
                 Player player = (Player) sender;
                 String rpname = String.join(" ", args); // Join args to form the rpname
-                YamlConfiguration modifyfile = YamlConfiguration.loadConfiguration(main.getFile());
+                YamlConfiguration modifyfile = YamlConfiguration.loadConfiguration(main.getCharactersFile());
                 modifyfile.set(player.getUniqueId() + ".rpname", rpname);
                 player.setDisplayName(rpname);
                 player.setPlayerListName(rpname);
                 try {
-                    modifyfile.save(main.getFile());
+                    modifyfile.save(main.getCharactersFile());
                 } catch (Exception e) {
                     main.getLogger().warning("Could not save the file");
                 }

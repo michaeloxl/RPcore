@@ -20,7 +20,7 @@ public class clickviewdesc implements Listener {
         Player player = event.getPlayer();
         if (event.getRightClicked() instanceof Player && event.getHand() == EquipmentSlot.HAND) {
             Player target = (Player) event.getRightClicked();
-            YamlConfiguration modifyfile = YamlConfiguration.loadConfiguration(main.getFile());
+            YamlConfiguration modifyfile = YamlConfiguration.loadConfiguration(main.getCharactersFile());
             String desc = modifyfile.getString(target.getUniqueId() + ".desc");
             if (desc != null) {
                 player.sendMessage("Name: " + modifyfile.getString(target.getUniqueId()+".rpname") + "\nAge: " + modifyfile.getString(target.getUniqueId()+ ".age") + "\nDescription: " + desc) ;

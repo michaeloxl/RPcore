@@ -1,10 +1,3 @@
 # To set the looc radius
 looc-radius: 10
 ic-radius: 6
-# Prefixes or different roles, you can add more if you want
-roles:
-  admin: '&4[Admin]'
-  mod: '&2[Mod]'
-  owner: '&6[Owner]'
-  default: '&7'
-  Example: '&8'
