@@ -1,0 +1,4 @@
+roles:
+  Exapmle1: &7[test]
+  Exapmle2: &7[test]
+  Exapmle3: &7[test]

@@ -1,8 +1,8 @@
-// Main.java
 package org.Rpcore.Rpplugin;
 
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandExecutor;
+import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -21,11 +21,35 @@ public final class Main extends JavaPlugin implements CommandExecutor, Listener 
         charactersFile = initializeFile("characters.yml");
         Roles = initializeFile("roles.yml");
 
-        getConfig().options().copyDefaults();
+        getConfig().options().copyDefaults(true);
         saveDefaultConfig();
         Commands();
         Events();
         getLogger().info("Rpcore has been enabled");
+
+        YamlConfiguration charactersConfig = YamlConfiguration.loadConfiguration(getCharactersFile());
+        YamlConfiguration rolesConfig = YamlConfiguration.loadConfiguration(getRoles());
+        rolesConfig.options().copyDefaults(true);
+
+        // Check if the configuration section exists
+        if (rolesConfig.getConfigurationSection("roles") == null) {
+            getLogger().info("The 'roles' section is missing in roles.yml, creating default section...");
+            rolesConfig.createSection("roles");
+            rolesConfig.set("roles.Example1", "&7[test]");
+            rolesConfig.set("roles.Example2", "&7[test]");
+            rolesConfig.set("roles.Example3", "&7[test]");
+        }
+
+        // Set default values from roles.yml
+        getConfig().addDefaults(rolesConfig.getConfigurationSection("roles").getValues(true));
+        saveConfig(); // Save the main config with the new defaults
+
+        try {
+            rolesConfig.save(getRoles());
+            getLogger().info("roles.yml has been saved successfully");
+        } catch (IOException e) {
+            getLogger().warning("Could not save roles.yml");
+        }
     }
 
     @Override
@@ -76,6 +100,4 @@ public final class Main extends JavaPlugin implements CommandExecutor, Listener 
         Bukkit.getPluginManager().registerEvents(new clickviewdesc(this), this);
         getLogger().info("Events have been loaded");
     }
-
-        }
-
+}
