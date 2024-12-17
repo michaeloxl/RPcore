@@ -1,5 +1,5 @@
 name: RpCore
-version: '0.0.6'
+version: '0.0.17'
 main: org.Rpcore.Rpplugin.Main
 api-version: '1.21'
 commands:

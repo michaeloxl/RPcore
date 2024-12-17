@@ -25,6 +25,7 @@ public final class Main extends JavaPlugin implements CommandExecutor, Listener 
         saveDefaultConfig();
         Commands();
         Events();
+        Tab();
         getLogger().info("Rpcore has been enabled");
 
         YamlConfiguration charactersConfig = YamlConfiguration.loadConfiguration(getCharactersFile());
@@ -55,6 +56,8 @@ public final class Main extends JavaPlugin implements CommandExecutor, Listener 
     @Override
     public void onDisable() {
         // Plugin shutdown logic
+        getLogger().info("Rpcore has been disabled");
+
     }
 
     private File initializeFile(String fileName) {
@@ -100,4 +103,16 @@ public final class Main extends JavaPlugin implements CommandExecutor, Listener 
         Bukkit.getPluginManager().registerEvents(new clickviewdesc(this), this);
         getLogger().info("Events have been loaded");
     }
+    public void Tab() {
+        // Register tab completion
+        Bukkit.getPluginCommand("looc").setTabCompleter(new LOOCtab(this));
+        Bukkit.getPluginCommand("rpname").setTabCompleter(new RPNametab(this));
+        Bukkit.getPluginCommand("setdesc").setTabCompleter(new setdesctab(this));
+        Bukkit.getPluginCommand("setage").setTabCompleter(new setagetab(this));
+        Bukkit.getPluginCommand("setrole").setTabCompleter(new setroletab(this));
+        getLogger().info("Tab completion has been loaded");
+    }
+
+
+
 }

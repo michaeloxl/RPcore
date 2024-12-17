@@ -6,7 +6,7 @@
 
     <groupId>org.Rpcore</groupId>
     <artifactId>rpcore</artifactId>
-    <version>0.0.6</version>
+    <version>0.0.17</version>
     <packaging>jar</packaging>
 
     <name>Rpcore</name>
