@@ -23,17 +23,19 @@ public class Chatformat implements Listener {
         String rpname = modifyfile.getString(event.getPlayer().getUniqueId() + ".rpname");
         int radius = main.getConfig().getInt("ic-radius", 7);
         String role = modifyfile.getString(event.getPlayer().getUniqueId() + ".role");
-        String Chatrole = roles.getString(role);
-        String colorCode = roles.getString(role, "&f"); // Default to white if no color is found
-        String translatedColorCode = ChatColor.translateAlternateColorCodes('&', colorCode);
+        String Chatrole = roles.getString("roles." + role);
+        String formattedChatrole = ChatColor.translateAlternateColorCodes('&', Chatrole);
         event.setCancelled(true); // Cancel the normal chat
 
         for (Player target : Bukkit.getOnlinePlayers()) {
             if (rpname != null && target.getWorld().equals(event.getPlayer().getWorld()) && target.getLocation().distance(event.getPlayer().getLocation()) <= radius) {
-                target.sendMessage(translatedColorCode + " " + ChatColor.RESET + rpname + " says " + message);
+                target.sendMessage(  formattedChatrole + " " + ChatColor.RESET + rpname + " says " + message);
             } else if (rpname == null && target.getWorld().equals(event.getPlayer().getWorld()) && target.getLocation().distance(event.getPlayer().getLocation()) <= radius) {
-                target.sendMessage(event.getPlayer().getName() + " says " + message);
+                target.sendMessage(  formattedChatrole +" "+ ChatColor.RESET+ event.getPlayer().getName() + " says " + message);
+            } else if (Chatrole == null) {
+                modifyfile.set(event.getPlayer().getUniqueId() + ".role", "Default");
+                target.sendMessage(  formattedChatrole + " " + ChatColor.RESET + rpname + " says " + message);
             }
         }
+        }
     }
-}

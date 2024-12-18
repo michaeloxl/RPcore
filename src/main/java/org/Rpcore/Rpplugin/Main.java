@@ -20,7 +20,7 @@ public final class Main extends JavaPlugin implements CommandExecutor, Listener 
         getDataFolder().mkdirs();
         charactersFile = initializeFile("characters.yml");
         Roles = initializeFile("roles.yml");
-
+        Wait();
         getConfig().options().copyDefaults(true);
         saveDefaultConfig();
         Commands();
@@ -93,6 +93,7 @@ public final class Main extends JavaPlugin implements CommandExecutor, Listener 
         Bukkit.getPluginCommand("viewdesc").setExecutor(new viewdesc(this));
         Bukkit.getPluginCommand("setrole").setExecutor(new setrole(this));
         getLogger().info("Commands have been loaded");
+        Wait();
     }
 
     public void Events() {
@@ -102,6 +103,7 @@ public final class Main extends JavaPlugin implements CommandExecutor, Listener 
         Bukkit.getPluginManager().registerEvents(new displayname(this), this);
         Bukkit.getPluginManager().registerEvents(new clickviewdesc(this), this);
         getLogger().info("Events have been loaded");
+        Wait();
     }
     public void Tab() {
         // Register tab completion
@@ -111,8 +113,16 @@ public final class Main extends JavaPlugin implements CommandExecutor, Listener 
         Bukkit.getPluginCommand("setage").setTabCompleter(new setagetab(this));
         Bukkit.getPluginCommand("setrole").setTabCompleter(new setroletab(this));
         getLogger().info("Tab completion has been loaded");
+        Wait();
     }
-
+public void Wait() {
+        // Register wait
+    try {
+        Thread.sleep(2000);
+    } catch (InterruptedException e) {
+        getLogger().warning("Could not wait, continuing...");
+    }
+}
 
 
 }

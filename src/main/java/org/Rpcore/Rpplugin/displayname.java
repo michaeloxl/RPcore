@@ -20,7 +20,7 @@ public class displayname implements Listener {
         YamlConfiguration modify2file = YamlConfiguration.loadConfiguration(main.getRoles());
         String rpname = modifyfile.getString(player.getUniqueId() + ".rpname");
         String role = modifyfile.getString(player.getUniqueId() + ".role");
-        String actualrole = modify2file.getString(role);
+        String actualrole = modify2file.getString("Roles." + role);
         if (rpname != null) {
             player.setDisplayName(rpname);
             player.setPlayerListName(actualrole + " " + rpname);
