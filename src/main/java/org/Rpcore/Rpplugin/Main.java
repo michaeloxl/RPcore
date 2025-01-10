@@ -5,7 +5,6 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
-
 import java.io.File;
 import java.io.IOException;
 
@@ -27,11 +26,9 @@ public final class Main extends JavaPlugin implements CommandExecutor, Listener 
         Events();
         Tab();
         getLogger().info("Rpcore has been enabled");
-
         YamlConfiguration charactersConfig = YamlConfiguration.loadConfiguration(getCharactersFile());
         YamlConfiguration rolesConfig = YamlConfiguration.loadConfiguration(getRoles());
         rolesConfig.options().copyDefaults(true);
-
         // Check if the configuration section exists
         if (rolesConfig.getConfigurationSection("roles") == null) {
             getLogger().info("The 'roles' section is missing in roles.yml, creating default section...");
@@ -50,7 +47,9 @@ public final class Main extends JavaPlugin implements CommandExecutor, Listener 
             getLogger().info("roles.yml has been saved successfully");
         } catch (IOException e) {
             getLogger().warning("Could not save roles.yml");
+
         }
+
     }
 
     @Override
@@ -105,6 +104,7 @@ public final class Main extends JavaPlugin implements CommandExecutor, Listener 
         getLogger().info("Events have been loaded");
         Wait();
     }
+
     public void Tab() {
         // Register tab completion
         Bukkit.getPluginCommand("looc").setTabCompleter(new LOOCtab(this));
@@ -115,14 +115,13 @@ public final class Main extends JavaPlugin implements CommandExecutor, Listener 
         getLogger().info("Tab completion has been loaded");
         Wait();
     }
-public void Wait() {
+
+    public void Wait() {
         // Register wait
-    try {
-        Thread.sleep(2000);
-    } catch (InterruptedException e) {
-        getLogger().warning("Could not wait, continuing...");
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            getLogger().warning("Could not wait, continuing...");
+        }
     }
-}
-
-
 }

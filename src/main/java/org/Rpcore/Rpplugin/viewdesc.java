@@ -1,12 +1,12 @@
 package org.Rpcore.Rpplugin;
 
+import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
-import org.bukkit.inventory.EquipmentSlot;
-import org.bukkit.permissions.Permission;
+import org.bukkit.plugin.messaging.ChannelNameTooLongException;
 
 public class viewdesc implements CommandExecutor {
     private final Main main;
@@ -23,7 +23,7 @@ public class viewdesc implements CommandExecutor {
             YamlConfiguration modifyfile = YamlConfiguration.loadConfiguration(main.getCharactersFile());
             String desc = modifyfile.getString(player.getUniqueId() + ".desc");
             if (desc != null) {
-                player.sendMessage("Name: " + modifyfile.getString(player.getUniqueId() + ".rpname") + "\nAge: " + modifyfile.getString(player.getUniqueId() + ".age") + "\nDescription: " + desc);
+                player.sendMessage( ChatColor.GREEN + "----------------------RPcore--------------------\n" + ChatColor.RESET + "Name: " + modifyfile.getString(player.getUniqueId() + ".rpname") + "\nAge: " + modifyfile.getString(player.getUniqueId() + ".age") + "\nDescription: " + desc);
 
 
             }
@@ -33,7 +33,7 @@ public class viewdesc implements CommandExecutor {
                 YamlConfiguration modifyfile = YamlConfiguration.loadConfiguration(main.getCharactersFile());
                 String desc = modifyfile.getString(target.getUniqueId() + ".desc");
                 if (desc != null) {
-                    player.sendMessage("Name: " + modifyfile.getString(target.getUniqueId() + ".rpname") + "\nAge: " + modifyfile.getString(target.getUniqueId() + ".age") + "\nDescription: " + desc);
+                    player.sendMessage(  ChatColor.GREEN + "----------------------RPcore--------------------\n" + ChatColor.RESET +"Name: " + modifyfile.getString(target.getUniqueId() + ".rpname") + "\nAge: " + modifyfile.getString(target.getUniqueId() + ".age") + "\nDescription: " + desc);
                 }
             }
 

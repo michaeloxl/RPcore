@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae6798f0-850e-4208-a856-f1690475b252" name="Changes" comment="Fixed Roles not appearing in chat.">
+    <list default="true" id="ae6798f0-850e-4208-a856-f1690475b252" name="Changes" comment="Removed vault as a dependency.">
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Rpcore/Rpplugin/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Rpcore/Rpplugin/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Rpcore/Rpplugin/viewdesc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Rpcore/Rpplugin/viewdesc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/Rpcore/Rpplugin/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Rpcore/Rpplugin/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +40,7 @@
   }
 }</component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -140,7 +144,16 @@
       <workItem from="1734449286532" duration="367000" />
       <workItem from="1734532320804" duration="775000" />
       <workItem from="1734537567141" duration="3366000" />
-      <workItem from="1734540982195" duration="828000" />
+      <workItem from="1734540982195" duration="1251000" />
+      <workItem from="1734553111418" duration="357000" />
+      <workItem from="1734553511144" duration="274000" />
+      <workItem from="1734553799060" duration="2202000" />
+      <workItem from="1734556368623" duration="1676000" />
+      <workItem from="1734626278132" duration="61000" />
+      <workItem from="1734626352152" duration="95000" />
+      <workItem from="1734825747683" duration="59000" />
+      <workItem from="1734826155040" duration="531000" />
+      <workItem from="1734826746830" duration="1821000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -230,7 +243,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734541371299</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Removed vault as a dependency.">
+      <option name="closed" value="true" />
+      <created>1734542084650</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1734542084650</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,6 +291,7 @@
     <MESSAGE value="Added roles.yml defaults." />
     <MESSAGE value="Added tab completion classes, not all finished" />
     <MESSAGE value="Fixed Roles not appearing in chat." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed Roles not appearing in chat." />
+    <MESSAGE value="Removed vault as a dependency." />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed vault as a dependency." />
   </component>
 </project>
