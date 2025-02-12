@@ -1,3 +1,7 @@
 # To set the looc radius
 looc-radius: 10
 ic-radius: 6
+# running distance to upgrade speed below level 50
+Distancelvl50: 1000
+Distancelvl100: 2000
+

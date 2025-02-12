@@ -6,11 +6,13 @@ org\Rpcore\Rpplugin\setagetab.class
 org\Rpcore\Rpplugin\setage.class
 org\Rpcore\Rpplugin\viewdesc.class
 org\Rpcore\Rpplugin\Chatformat.class
+org\Rpcore\Rpplugin\attributes.class
 org\Rpcore\Rpplugin\setdesctab.class
 org\Rpcore\Rpplugin\RPNametab.class
 org\Rpcore\Rpplugin\setdesc.class
 org\Rpcore\Rpplugin\displayname.class
+org\Rpcore\Rpplugin\onjoin.class
 org\Rpcore\Rpplugin\Main.class
-org\Rpcore\Rpplugin\LOOCtab.class
 org\Rpcore\Rpplugin\OOC.class
+org\Rpcore\Rpplugin\Run_attribute.class
 org\Rpcore\Rpplugin\setrole.class

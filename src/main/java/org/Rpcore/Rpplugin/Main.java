@@ -19,7 +19,6 @@ public final class Main extends JavaPlugin implements CommandExecutor, Listener 
         getDataFolder().mkdirs();
         charactersFile = initializeFile("characters.yml");
         Roles = initializeFile("roles.yml");
-        Wait();
         getConfig().options().copyDefaults(true);
         saveDefaultConfig();
         Commands();
@@ -36,6 +35,7 @@ public final class Main extends JavaPlugin implements CommandExecutor, Listener 
             rolesConfig.set("roles.Example1", "&7[test]");
             rolesConfig.set("roles.Example2", "&7[test]");
             rolesConfig.set("roles.Example3", "&7[test]");
+            rolesConfig.set("roles.Default", "&7[Grade 7]");
         }
 
         // Set default values from roles.yml
@@ -91,8 +91,8 @@ public final class Main extends JavaPlugin implements CommandExecutor, Listener 
         Bukkit.getPluginCommand("setage").setExecutor(new setage(this));
         Bukkit.getPluginCommand("viewdesc").setExecutor(new viewdesc(this));
         Bukkit.getPluginCommand("setrole").setExecutor(new setrole(this));
+        //Bukkit.getPluginCommand("attributes").setExecutor(new attributes(this));
         getLogger().info("Commands have been loaded");
-        Wait();
     }
 
     public void Events() {
@@ -101,27 +101,20 @@ public final class Main extends JavaPlugin implements CommandExecutor, Listener 
         Bukkit.getPluginManager().registerEvents(new Chatformat(this), this);
         Bukkit.getPluginManager().registerEvents(new displayname(this), this);
         Bukkit.getPluginManager().registerEvents(new clickviewdesc(this), this);
+        Bukkit.getPluginManager().registerEvents(new Run_attribute(this), this);
+        Bukkit.getPluginManager().registerEvents(new onjoin(this), this);
         getLogger().info("Events have been loaded");
-        Wait();
+
     }
 
     public void Tab() {
         // Register tab completion
-        Bukkit.getPluginCommand("looc").setTabCompleter(new LOOCtab(this));
         Bukkit.getPluginCommand("rpname").setTabCompleter(new RPNametab(this));
         Bukkit.getPluginCommand("setdesc").setTabCompleter(new setdesctab(this));
         Bukkit.getPluginCommand("setage").setTabCompleter(new setagetab(this));
         Bukkit.getPluginCommand("setrole").setTabCompleter(new setroletab(this));
         getLogger().info("Tab completion has been loaded");
-        Wait();
     }
 
-    public void Wait() {
-        // Register wait
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            getLogger().warning("Could not wait, continuing...");
-        }
-    }
+
 }
