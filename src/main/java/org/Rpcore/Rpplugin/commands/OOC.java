@@ -1,6 +1,7 @@
 // OOC.java
-package org.Rpcore.Rpplugin;
+package org.Rpcore.Rpplugin.commands;
 
+import org.Rpcore.Rpplugin.Main;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.event.EventHandler;

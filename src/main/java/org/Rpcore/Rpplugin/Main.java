@@ -1,5 +1,11 @@
 package org.Rpcore.Rpplugin;
 
+import org.Rpcore.Rpplugin.Tabcomplete.RPNametab;
+import org.Rpcore.Rpplugin.Tabcomplete.setagetab;
+import org.Rpcore.Rpplugin.Tabcomplete.setdesctab;
+import org.Rpcore.Rpplugin.Tabcomplete.setroletab;
+import org.Rpcore.Rpplugin.commands.*;
+import org.Rpcore.Rpplugin.events.*;
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.configuration.file.YamlConfiguration;

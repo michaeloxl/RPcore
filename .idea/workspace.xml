@@ -4,25 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae6798f0-850e-4208-a856-f1690475b252" name="Changes" comment="Removed vault as a dependency.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Rpcore/Rpplugin/Run_attribute.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Rpcore/Rpplugin/attributes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Rpcore/Rpplugin/onjoin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Rpcore/Rpplugin/LOOCtab.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Rpcore/Rpplugin/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Rpcore/Rpplugin/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/Rpcore/Rpplugin/LOOCtab.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/Rpcore/Rpplugin/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Rpcore/Rpplugin/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/Rpcore/Rpplugin/viewdesc.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Rpcore/Rpplugin/viewdesc.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/original-rpcore-0.0.19.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/rpcore-0.0.19-shaded.jar" beforeDir="false" />
-    </list>
+    <list default="true" id="ae6798f0-850e-4208-a856-f1690475b252" name="Changes" comment="Added an attribute system for running (still a work in progress)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -172,7 +154,7 @@
       <workItem from="1739300255289" duration="7000" />
       <workItem from="1739330316576" duration="3924000" />
       <workItem from="1739371473593" duration="919000" />
-      <workItem from="1739391752507" duration="2784000" />
+      <workItem from="1739391752507" duration="2926000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -270,7 +252,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734542084650</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Added an attribute system for running (still a work in progress)">
+      <option name="closed" value="true" />
+      <created>1739394716777</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1739394716778</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,6 +301,7 @@
     <MESSAGE value="Added tab completion classes, not all finished" />
     <MESSAGE value="Fixed Roles not appearing in chat." />
     <MESSAGE value="Removed vault as a dependency." />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed vault as a dependency." />
+    <MESSAGE value="Added an attribute system for running (still a work in progress)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added an attribute system for running (still a work in progress)" />
   </component>
 </project>

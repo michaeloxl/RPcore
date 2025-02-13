@@ -1,13 +1,11 @@
-package org.Rpcore.Rpplugin;
+package org.Rpcore.Rpplugin.events;
 
-import org.bukkit.Material;
+import org.Rpcore.Rpplugin.Main;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEntityEvent;
-import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.EquipmentSlot;
 
 public class clickviewdesc implements Listener {

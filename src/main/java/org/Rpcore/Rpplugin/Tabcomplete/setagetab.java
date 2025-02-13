@@ -1,13 +1,14 @@
-package org.Rpcore.Rpplugin;
+package org.Rpcore.Rpplugin.Tabcomplete;
 
+import org.Rpcore.Rpplugin.Main;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.TabCompleter;
 
 import java.util.List;
 
-public class setdesctab implements TabCompleter {
-    public setdesctab(Main main) {
+public class setagetab implements TabCompleter {
+    public setagetab(Main main) {
     }
 
     @Override

@@ -1,12 +1,12 @@
-package org.Rpcore.Rpplugin;
+package org.Rpcore.Rpplugin.commands;
 
+import org.Rpcore.Rpplugin.Main;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
-import org.bukkit.plugin.messaging.ChannelNameTooLongException;
 
 public class viewdesc implements CommandExecutor {
     private final Main main;

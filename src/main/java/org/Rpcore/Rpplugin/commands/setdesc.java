@@ -1,5 +1,6 @@
-package org.Rpcore.Rpplugin;
+package org.Rpcore.Rpplugin.commands;
 
+import org.Rpcore.Rpplugin.Main;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;

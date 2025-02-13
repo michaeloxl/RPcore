@@ -1,5 +1,6 @@
-package org.Rpcore.Rpplugin;
+package org.Rpcore.Rpplugin.events;
 
+import org.Rpcore.Rpplugin.Main;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;

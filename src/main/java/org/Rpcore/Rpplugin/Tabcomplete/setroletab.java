@@ -1,6 +1,7 @@
 
-package org.Rpcore.Rpplugin;
+package org.Rpcore.Rpplugin.Tabcomplete;
 
+import org.Rpcore.Rpplugin.Main;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
