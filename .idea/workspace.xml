@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae6798f0-850e-4208-a856-f1690475b252" name="Changes" comment="Added an attribute system for running (still a work in progress)" />
+    <list default="true" id="ae6798f0-850e-4208-a856-f1690475b252" name="Changes" comment="Organization" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,37 +44,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Maven.ooc [clean,package].executor": "Run",
-    "Maven.ooc [install].executor": "Run",
-    "Maven.ooc [test].executor": "Run",
-    "Maven.rpcore [install].executor": "Run",
-    "Maven.rpcore [test].executor": "Run",
-    "Notification.DisplayName-DoNotAsk-WindowsDefender": "Microsoft Defender configuration",
-    "Notification.DoNotAsk-WindowsDefender": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Michael/IdeaProjects/RPcore",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven.ooc [clean,package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.ooc [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.ooc [test].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.rpcore [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.rpcore [test].executor&quot;: &quot;Run&quot;,
+    &quot;Notification.DisplayName-DoNotAsk-WindowsDefender&quot;: &quot;Microsoft Defender configuration&quot;,
+    &quot;Notification.DoNotAsk-WindowsDefender&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Michael/IdeaProjects/RPcore&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.Rpcore.Rpplugin" />
       <recent name="org.OOC.oOC" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.Rpcore.Rpplugin.Tabcomplete" />
+      <recent name="org.Rpcore.Rpplugin.commands" />
+      <recent name="org.Rpcore.Rpplugin.events" />
     </key>
   </component>
   <component name="RunManager">
@@ -155,6 +160,7 @@
       <workItem from="1739330316576" duration="3924000" />
       <workItem from="1739371473593" duration="919000" />
       <workItem from="1739391752507" duration="2926000" />
+      <workItem from="1739406540180" duration="388000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -260,7 +266,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739394716778</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Organization">
+      <option name="closed" value="true" />
+      <created>1739406924640</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1739406924640</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -302,6 +316,7 @@
     <MESSAGE value="Fixed Roles not appearing in chat." />
     <MESSAGE value="Removed vault as a dependency." />
     <MESSAGE value="Added an attribute system for running (still a work in progress)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added an attribute system for running (still a work in progress)" />
+    <MESSAGE value="Organization" />
+    <option name="LAST_COMMIT_MESSAGE" value="Organization" />
   </component>
 </project>
